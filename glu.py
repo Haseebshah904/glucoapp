@@ -2,7 +2,7 @@ import streamlit as st
 import anthropic
 
 # Set your API key here
-API_KEY = st.secerts["claude_api_key"]
+API_KEY = st.secrets["claude_api_key"]
 
 # Function to generate a message prompt for Claude AI
 def generate_meal_plan_request(fasting_sugar, pre_meal_sugar, post_meal_sugar, dietary_preference):
