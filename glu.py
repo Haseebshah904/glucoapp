@@ -26,7 +26,7 @@ def get_claude_response(api_key, fasting_sugar, pre_meal_sugar, post_meal_sugar,
     # Use Claude AI to get the response
     message = client.messages.create(
         model="claude-3-5-sonnet-20240620",
-        max_tokens=250,
+        max_tokens=600,
         temperature=0,
         system="You are a world-class nutritionist. who specializes in diabetes management.",
         messages=[
